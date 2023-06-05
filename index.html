@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>JS Quizes</title>
+</head>
+<body>
+    <!-- nav header -->
+    <header class="largescreen">
+        <div class="logo">
+          <p>JS Quizes</p>
+        </div>
+        <div class="empty"></div>
+        <div class="nav">
+          <button id="reset">Restart Quizes</button>
+          <a href="https://bit.ly/3NaaKdP" target="_blank"
+            ><img src="./assets/twitter.png" alt="twitter icon"
+          /></a>
+          <a href="https://bit.ly/3WMNmX6" target="_blank"
+            ><img src="./assets/linkedin.png" alt="linkedin icon"
+          /></a>
+        </div>
+    </header>
+    <!-- nav header end -->
+    
+    <!-- body -->
+    <div class="body_content container">
+      <div id="quizes-content">
+        <div id="quiz-progress">
+          <p>Questions Answered: <span id="answered-count">0</span></p>
+          <p>Questions Remaining: <span id="remaining-count">0</span></p>
+        </div>
+        <div id="question-container">
+          <h2 id="question"></h2>
+          <ul id="options">
+            <li><button class="option"></button></li>
+            <li><button class="option"></button></li>
+            <li><button class="option"></button></li>
+            <li><button class="option"></button></li>
+          </ul>
+        </div>
+        <div class="skip">
+          <button id="skip-btn">Skip</button>
+        </div>
+        <div class="buttons">
+          <button id="prev-btn" class="btn hiddenv">Prev</button>
+          <button id="next-btn" disabled>Next</button>
+        </div>
+      </div>
+      <div id="result-container" class="hidden">
+        <h2>Quiz Results</h2>
+        <p id="score"></p>
+        <div id="evaluation-details">
+          <div id="answered-questions" class="hidden">
+            <h2>Answered Questions</h2>
+            <div id="correct-answers"></div>
+            <div id="incorrect-answers"></div>
+          </div> <!-- Hidden element for answered questions -->
+          <div id="skipped-questions" class="hidden">
+            <h2>Skipped Questions</h2>
+            <div id="skipped-quizes"></div>
+          </div> <!-- Hidden element for skipped questions -->
+        </div>
+        <button id="start-over-btn" class="hidden">Start Over</button>
+      </div>
+    </div>
+    <!-- body end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+          <p>Made with ❤️ by _the_nth</p>
+          <p>&copy; 2023 Nth_labs. All rights reserved.</p>
+        </div>
+        <div class="footer-icons">
+          <a href="https://bit.ly/3NaaKdP" target="_blank"><img src="./assets/twitter.png" alt="twitter icon"></a>
+          <a href="https://bit.ly/3WMNmX6" target="_blank"><img src="./assets/linkedin.png" alt="linkedin icon"></a>
+        </div>
+    </footer>      
+    <!--footer end  -->
+
+    <!-- Scripts -->
+    <script src="./scripts/main.js" async></script>
+</body>
+</html>
